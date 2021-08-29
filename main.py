@@ -1,6 +1,6 @@
 #check the current time
 import datetime
-#time to repat the notification
+#time to repeat the notification
 import time 
 #getting custom notification in our windows
 from plyer import notification
@@ -10,7 +10,6 @@ from threading import Thread
 class WaterReminder (Thread):
     def run(self):
         while(True):
-            print("start")
             notification.notify(
                 #title of the notification,
                 title = "Drink Water",
